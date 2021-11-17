@@ -40,6 +40,7 @@
           </tr>
         <% end %>
       </table>
+      <%= render 'layouts/errors', user: @book_comment %>
       <div>
         <%= form_with(model:[@book, @book_comment], local:true) do |f| %>
           <%= f.text_area :comment, rows:'5', placeholder: "コメントをここに" %>
