@@ -56,7 +56,7 @@
       <%= render 'layouts/errors', user: @book_comment %>
       <div>
         <%= form_with(model:[@book, @book_comment], local:true) do |f| %>
-          <%= f.text_area :comment, rows:'5', placeholder: "コメントをここに" %>
+          <%= f.text_area :comment, class: 'form-control', size: "10×10" %>
           <%= f.submit "送信" %>
         <% end %>
       </div>
